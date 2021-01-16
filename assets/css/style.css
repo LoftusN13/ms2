@@ -1,0 +1,153 @@
+/*-------------------------Google Fonts----------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+/*-------------------------General----------------------- */
+body {
+    font-family: Nunito, sans-serif;
+    color: #1F1F1F;
+    background-color: #F7F3F5;
+}
+
+/*-------------------------Headings----------------------- */
+.main-heading {
+    text-align: center;
+}
+
+/*-------------------------Header----------------------- */ 
+#logo {
+    height: 4rem;
+}
+
+.navbar {
+    background-color: #F7F3F5;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: .2rem;
+    padding: 0 .5rem;
+    border-bottom: #7ADBE6 .13rem solid;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.5rem;
+}
+.navbar-collapse {
+    padding: 1rem 1.5rem;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #330C2F;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #330C2F;
+    background-color: rgba(0,0,0,0.1);
+    
+}
+
+.navbar-light .navbar-nav .nav-item .active {
+    color: #330C2F;
+    font-weight: 700;
+}
+
+/*-------------------------HOME PAGE----------------------- */
+.main-heading {
+    padding: 1.5rem 1rem 1rem 1rem;
+    color: #330C2F;
+    margin-bottom: 0;
+}
+
+.main-heading i {
+    font-size: 1.7rem;
+    color: #90143D;
+}
+
+.main-heading i:hover,
+.modal-body a:hover,
+.btn:hover {
+    color: #7ADBE6;
+}
+
+#myModal {
+    
+}
+
+.modal-content {
+    background-color: #F7F3F5;
+    border: #7ADBE6 .25rem solid;
+}
+
+.modal-title {
+    text-align: center;
+    color: #90143D;
+    font-weight: 700;
+}
+
+.modal-body {
+    font-size: 1rem;
+}
+
+.modal-body li {
+    text-align: left;
+    padding-bottom: .5rem;
+}
+
+.modal-body a {
+    text-decoration: none;
+    color: #90143D;
+}
+
+.btn {
+    font-weight: 700;
+    color: #90143D;
+}
+
+.intro-par {
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/*-------------------------Footer----------------------- */
+.footer-section {
+    background-color: #330C2F;
+    color: #F7F3F5;
+    text-align: center;
+    padding: 1rem;
+    font-size: .8rem;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #F7F3F5;
+}
+
+.footer-section a:hover {
+    color: #7ADBE6;
+}
+
+.footer-section a i {
+    color: #F7F3F5;
+    font-size: 1.7rem;
+    padding: 1rem;
+}
+
+.footer-section a i:hover {
+    color: #7ADBE6;
+}
+
+.footer-copyright {
+    font-weight: 200;
+}
+
+/*-------------------------Media Queries----------------------- */ 
+@media only screen and (min-width: 576px) {
+    .navbar-light .navbar-nav .nav-link:hover {
+        text-decoration: underline #7ADBE6 .3rem;
+        transition: .5s;
+        background-color: #F7F3F5;
+    }
+}
