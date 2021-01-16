@@ -4,41 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <title>Memory Game</title>
+    <title>Match The Pairs</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm bg-white navbar-light fixed-top">
+        <!-- NAVBAR WITH LOGO -->
+        <nav class="navbar navbar-expand-sm navbar-light">
             <a class="navbar-brand" href="index.html">
-                <img id="logo" src="#" alt="Match the Pairs logo">
+                <img src="assets/images/logo.png" id="logo" alt="Match the Pairs logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-menu" aria-controls="navigation-menu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navigation-menu">
+            <div class="justify-content-end collapse navbar-collapse" id="navigation-menu">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact Us</a>
+                        <a class="nav-link" href="contact.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </nav>
+        <!-- End of NAVBAR --> 
     </header>
+    
+    <div class="container-fluid">
+        <h1 class="main-heading">Match the Pairs
 
-    <div>
-        main content and game here
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
+                <i class="question-icon far fa-question-circle" aria-hidden="true"></i>
+            </button>
 
+            <!-- Modal -->
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header justify-content-center">
+                            <h4 class="modal-title">Welcome!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                In order to play the game, just follow these instructions;
+                                <ol>
+                                    <li>Click or tap a tile to turn it over to reveal an image.</li>
+                                    <li>You now need to find this image's pair.</li>
+                                    <li>Select another tile. If it matches the first one; well done! You have found a match. If not; both tiles will flip back.</li>
+                                    <li>Continue flipping tiles until you have found all the pairs.</li>
+                                    <li>Click on the <em>Reset Game</em> button if you'd like to start over.</li>
+                                    <li>If you have any difficulty understanding or playing this game, please <a href="contact.html"><strong>contact us</strong></a> and we will do our best to help.</li>
+                                    <li>Enjoy playing the game!</li>
+                                </ol>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Okay!</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>         
+        </h1>
     </div>
 
-    <footer>
-        social media links and copyright information here
-    </footer>
+    <div class="intro-par">
+        <p>
+            If you need instructions for playing the game, click or tap the <span><i class="far fa-question-circle" aria-hidden="true"></i></span> icon above.
+        </p>
+    </div>
+    
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
+   <!--  <div class="instruction-section container-fluid">
+        <h2>Welcome!</h2>
+        <p>
+            In order to play the game, just follow these instructions;
+            <ol>
+                <li>Click or tap a tile to turn it over to reveal an image.</li>
+                <li>You now need to find this image's pair.</li>
+                <li>Select another tile. If it matches the first one; well done! You have found a match. If not; both tiles will flip back.</li>
+                <li>Continue flipping tiles until you have found all the pairs.</li>
+                <li>Click on the <em>Reset Game</em> button if you'd like to start over.</li>
+                <li>If you have any difficulty understanding or playing this game, please <a href="contact.html"><strong>contact us</strong></a> and we will do our best to help.</li>
+                <li>Enjoy playing the game!</li>
+            </ol>
+        </p>
+    </div> -->
+
+    <!-- FOOTER -->
+    <footer class="footer-section container-fluid">
+        <div class="row">
+            <div class="col">
+                <h6>Follow Us On Social Media!</h6>
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                    <span class="sr-only">Facebook</span>
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <span class="sr-only">Twitter</span>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <span class="sr-only">Instagram</span>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                    <i class="fab fa-youtube" aria-hidden="true"></i>
+                    <span class="sr-only">YouTube</span>
+                </a>    
+            </div>
+        </div>
+        <div class="row">
+            <div class="col footer-copyright">
+                <em>&copy; Copyright 2021</em>
+            </div>
+            <div class="col footer-contact">
+                Contact Us <a href="contact.html"><strong>here.</strong></a>
+            </div>
+        </div>
+    </footer>
+    <!-- End of FOOTER -->
+    
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous" defer></script>
 </body>
 </html>
