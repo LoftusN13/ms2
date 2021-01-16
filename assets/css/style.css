@@ -53,7 +53,7 @@ body {
     font-weight: 700;
 }
 
-/*-------------------------HOME PAGE----------------------- */
+/*-------------------------HOME PAGE MODAL----------------------- */
 .main-heading {
     padding: 1.5rem 1rem 1rem 1rem;
     color: #330C2F;
@@ -72,7 +72,7 @@ body {
 }
 
 #myModal {
-    
+    padding-top: 1rem;
 }
 
 .modal-content {
@@ -100,10 +100,22 @@ body {
     color: #90143D;
 }
 
+.modal-footer {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .btn {
     font-weight: 700;
+    font-size: 1.2rem;
     color: #90143D;
 }
+
+.modal-dialog {
+    padding: 1rem;
+}
+
+/*-------------------------HOME PAGE----------------------- */
 
 .intro-par {
     text-align: center;
