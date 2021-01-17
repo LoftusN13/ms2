@@ -43,7 +43,7 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #330C2F;
+    color: #90143D;
     background-color: rgba(0,0,0,0.1);
     
 }
@@ -51,6 +51,9 @@ body {
 .navbar-light .navbar-nav .nav-item .active {
     color: #330C2F;
     font-weight: 700;
+}
+.navbar-light .navbar-nav .nav-item .active:hover {
+    color: #90143D;
 }
 
 /*-------------------------HOME PAGE MODAL----------------------- */
@@ -123,6 +126,10 @@ body {
     padding-right: 1rem;
 }
 
+.instruction-section {
+    display: none;
+}
+
 /*-------------------------Footer----------------------- */
 .footer-section {
     background-color: #330C2F;
@@ -161,5 +168,34 @@ body {
         text-decoration: underline #7ADBE6 .3rem;
         transition: .5s;
         background-color: #F7F3F5;
+    }
+    #logo {
+        height: 5rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .intro-par, .btn {
+        display: none;
+    }
+    .instruction-section {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+    }
+    .instruction-section h2 {
+    color: #90143D;
+    font-weight: 600;
+    }
+    .instruction-section li {
+    text-align: left;
+    padding-bottom: .5rem;
+    }
+    .instruction-section a {
+    text-decoration: none;
+    color: #90143D;
+    }
+    .instruction-section a:hover {
+        color: #7ADBE6;
     }
 }
