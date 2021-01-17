@@ -129,6 +129,10 @@ body {
 .instruction-section {
     display: none;
 }
+ol {
+    list-style: red;
+}
+
 
 /*-------------------------Footer----------------------- */
 .footer-section {
@@ -184,16 +188,16 @@ body {
         padding: 1rem;
     }
     .instruction-section h2 {
-    color: #90143D;
-    font-weight: 600;
+        color: #90143D;
+        font-weight: 600;
     }
     .instruction-section li {
-    text-align: left;
-    padding-bottom: .5rem;
+        text-align: left;
+        padding-bottom: .5rem;
     }
     .instruction-section a {
-    text-decoration: none;
-    color: #90143D;
+        text-decoration: none;
+        color: #90143D;
     }
     .instruction-section a:hover {
         color: #7ADBE6;
