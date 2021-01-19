@@ -34,21 +34,19 @@
     
     <div class="container-fluid">
         <h1 class="main-heading">Match the Pairs
-
-            <!-- Trigger the modal with a button -->
-            <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
-                <i class="question-icon far fa-question-circle" aria-hidden="true"></i>
+            <!-- MODAL BUTTON-->  
+            <button type="button" class="btn" data-toggle="modal" data-target="#instructionModal">
+                <i class="far fa-question-circle" aria-hidden="true"></i>
             </button>
 
-            <!-- Modal -->
-            <div id="myModal" class="modal fade" role="dialog">
+            <!-- MODAL CONTENT-->
+            <div id="instructionModal" class="modal fade" role="dialog">
                 <div class="modal-dialog">
-
-                    <!-- Modal content-->
                     <div class="modal-content">
                         <div class="modal-header justify-content-center">
                             <h4 class="modal-title">Welcome!</h4>
                         </div>
+
                         <div class="modal-body">
                             <p>
                                 In order to play the game, just follow these instructions;
@@ -62,25 +60,27 @@
                                     <li>Enjoy playing the game!</li>
                                 </ol>
                             </p>
+
                         </div>
+                        <!-- MODAL CLOSE BUTTON--> 
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Okay!</button>
                         </div>
                     </div>
-
                 </div>
-            </div>         
+            </div>
         </h1>
+        <!-- End of MODAL -->
     </div>
 
+    <!-- INSTRUCTION FOR SMALLER SCREENS -->
     <div class="intro-par">
         <p>
             If you need instructions for playing the game, click or tap the <span><i class="far fa-question-circle" aria-hidden="true"></i></span> icon above.
         </p>
     </div>
-    
 
-
+    <!-- INSTRUCTION FOR LARGER SCREENS -->
     <div class="instruction-section container-fluid row">
         <div class="col-lg-4">
             <h2>Welcome!</h2>
@@ -103,6 +103,7 @@
     <footer class="footer-section container-fluid">
         <div class="row">
             <div class="col">
+                <!-- links to social media platforms -->
                 <h6>Follow Us On Social Media!</h6>
                 <a href="https://www.facebook.com/" target="_blank">
                     <i class="fab fa-facebook-f" aria-hidden="true"></i>
@@ -126,6 +127,7 @@
             <div class="col footer-copyright">
                 <em>&copy; Copyright 2021</em>
             </div>
+            <!-- link to contact page -->
             <div class="col footer-contact">
                 Contact Us <a href="contact.html"><strong>here.</strong></a>
             </div>
