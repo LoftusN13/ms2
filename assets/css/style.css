@@ -125,7 +125,16 @@ h2 {
 .instruction-section {
     display: none;
 }
+.tiles {
+    list-style: none;
+}
+.card {
+    height: 10rem;
+}
 
+.instruction-section .tile-game {
+    display: block;
+}
 /*-------------------------CONTACT PAGE------------------- */
 .container-fluid {
     margin: 0;
