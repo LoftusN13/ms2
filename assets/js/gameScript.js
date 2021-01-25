@@ -9,6 +9,8 @@ let pauseFlips = false;
 /* Flip Game Tile When Clicked */
 function flipTile() {
     if(pauseFlips) return;
+    if(this === firstTile) return;
+
     this.classList.add("flip");
 
     if(!flippedTile) {
@@ -18,7 +20,6 @@ function flipTile() {
     }
 
     secondTile = this;
-    flippedTile = false;
 
     checkForMatch();
 }
@@ -37,6 +38,8 @@ function checkForMatch(){
 function disableTiles() {
     firstTile.removeEventListener("click", flipTile);
     secondTile.removeEventListener("click", flipTile);
+
+    resetTiles();
 }
 
 /* Flip Tiles Back If Not Matched */
@@ -46,8 +49,13 @@ function unflipTiles() {
     setTimeout(() => {
      firstTile.classList.remove("flip");
      secondTile.classList.remove("flip");
-     pauseFlips = false;
+     resetTiles();
    }, 1200);
 }
+
+function resetTiles() {
+   [flippedTile, pauseFlips] = [false, false];
+   [firstTile, secondTile] = [null, null];
+ }
 
 tiles.forEach(tile => tile.addEventListener("click", flipTile));
