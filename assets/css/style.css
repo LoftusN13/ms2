@@ -14,6 +14,7 @@ body {
     color: #330C2F;
     margin-bottom: 0;
     padding: 1.5rem 1rem 1rem 1rem;
+    font-weight: 600;
 }
 
 h2 {
@@ -32,7 +33,7 @@ h2 {
     font-weight: 500;
     letter-spacing: .2rem;
     padding: 0 .5rem;
-    border-bottom: #7ADBE6 .13rem solid;
+    border-bottom: #7ADBE6 .18rem solid;
 }
 
 .navbar-toggler {
@@ -57,7 +58,7 @@ h2 {
 }
 
 .navbar-light .navbar-nav .nav-item .active {
-    color: #330C2F;
+    color: #90143D;
     font-weight: 700;
 }
 .navbar-light .navbar-nav .nav-item .active:hover {
@@ -221,7 +222,7 @@ label {
     background-color: #330C2F;
     color: #F7F3F5;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     font-size: .8rem;
 }
 
