@@ -58,4 +58,11 @@ function resetTiles() {
    [firstTile, secondTile] = [null, null];
  }
 
+(function shuffle() {
+   tiles.forEach(tile => {
+     let ramdomPos = Math.floor(Math.random() * 12);
+     tile.style.order = ramdomPos;
+   });
+ })();
+
 tiles.forEach(tile => tile.addEventListener("click", flipTile));
