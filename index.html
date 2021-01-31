@@ -80,9 +80,24 @@
         </p>
     </div>
 
-    <!-- INSTRUCTION FOR LARGER SCREENS -->
     <div class="container-fluid">
+        <!-- TIMER AND SCORE PANEL -->
+        <div class="panel">
+            <span class="timer">
+
+            </span>
+
+            <span id="pair-count">
+                
+            </span>
+
+            <span id="match-count">
+                
+            </span>
+        </div>
+    
         <div class="row">
+            <!-- INSTRUCTION FOR LARGER SCREENS -->
             <div class="col-lg-4 instruction-section">
                 <h2>Welcome!</h2>
                 <p>
@@ -98,7 +113,8 @@
                     </ol>
                 </p>
             </div>
-        
+            
+            <!-- GAME SECTION -->
             <div class="col-lg-8 tile-game">
                 <div class="game-tile" data-type="pic-1">
                     <img class="front-tile" src="assets/images/pic-1.jpg" alt="">
@@ -163,8 +179,7 @@
 
             <div class="reset">
                 <button class="reset-btn" onclick="resetGame()">Reset Game!</button>
-            </div>
-            
+            </div>   
         </div>
     </div>
 
