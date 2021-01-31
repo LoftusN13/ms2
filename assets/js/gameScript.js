@@ -8,6 +8,13 @@ let pauseFlips = false;
 
 const reset = document.querySelectorAll(".reset-btn");
 
+const pairCount = document.getElementById("pair-count");
+let pairCounter = 0;
+
+const matchCount = document.getElementById("match-count");
+let matchCounter = 0;
+
+
 /* Flip Game Tile When Clicked */
 function flipTile() {
     if(pauseFlips) return;
@@ -22,6 +29,9 @@ function flipTile() {
     }
 
     secondTile = this;
+    hasFlippedCard = false;
+    pairCounter++;
+    pairCount.innerHTML = `Total Pairs Flipped: ${pairCounter}`;
 
     checkForMatch();
 }
@@ -29,10 +39,11 @@ function flipTile() {
 /* Check if Two Tiles Match */
 function checkForMatch(){
     if(firstTile.dataset.type === secondTile.dataset.type) {
+    matchCounter++;
+    matchCount.innerHTML = `Total Matches: ${matchCounter}`;
     disableTiles();
     return;
     }
-
     unflipTiles();
 }
 
@@ -49,9 +60,9 @@ function unflipTiles() {
     pauseFlips = true;
 
     setTimeout(() => {
-     firstTile.classList.remove("flip");
-     secondTile.classList.remove("flip");
-     resetTiles();
+        firstTile.classList.remove("flip");
+        secondTile.classList.remove("flip");
+        resetTiles();
    }, 1200);
 }
 
@@ -62,18 +73,22 @@ function resetTiles() {
 
 (function shuffle() {
    tiles.forEach(tile => {
-     let ramdomPos = Math.floor(Math.random() * 12);
-     tile.style.order = ramdomPos;
+        let ramdomPos = Math.floor(Math.random() * 12);
+        tile.style.order = ramdomPos;
    });
  })();
 
  function resetGame(){
-     tiles.forEach(tile => {
-     let ramdomPos = Math.floor(Math.random() * 12);
-     tile.style.order = ramdomPos;
-   });
+    tiles.forEach(tile => {
+    let ramdomPos = Math.floor(Math.random() * 12);
+    tile.style.order = ramdomPos;
+    });
+    pairCounter = 0;
+    pairCount.innerHTML = `Total Pairs Flipped: ${pairCounter}`;
+    matchCounter = 0;
+    matchCount.innerHTML = `Total Matches: ${matchCounter}`;
  }
-
+     
 tiles.forEach(tile => tile.addEventListener("click", flipTile));
 
 reset.addEventListener("click", resetGame());
