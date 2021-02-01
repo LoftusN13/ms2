@@ -269,7 +269,8 @@ label {
 /*-------------------------Media Queries----------------------- */ 
 @media only screen and (min-width: 576px) {
     .navbar-light .navbar-nav .nav-link:hover {
-        text-decoration: underline #7ADBE6 .3rem;
+        text-decoration: underline #7ADBE6;
+        text-decoration-thickness: .3rem;
         transition: .5s;
         background-color: #F7F3F5;
     }

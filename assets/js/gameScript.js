@@ -14,18 +14,37 @@ let pairCounter = 0;
 const matchCount = document.getElementById("match-count");
 let matchCounter = 0;
 
+let timerOn = true;
+let time = 0;
+let timer;
+let mins;
+let secs;
+
+function startTimer() {
+    timer = setInterval(function () {
+        time++;
+        mins = ("0" + Math.floor(time / 60)).slice(-2);
+        secs = ("0" + (time % 60)).slice(-2);
+        document.getElementById("timer").innerHTML = `Timer: ${mins}:${secs}`;
+    }, 1000);
+}
 
 /* Flip Game Tile When Clicked */
 function flipTile() {
+    if (timerOn === true) {
+        startTimer();
+        timerOn = false;
+    }
+
     if(pauseFlips) return;
     if(this === firstTile) return;
-
+    
     this.classList.add("flip");
 
     if(!flippedTile) {
         flippedTile = true;
         firstTile = this;
-        return;
+        return;    
     }
 
     secondTile = this;
@@ -39,10 +58,10 @@ function flipTile() {
 /* Check if Two Tiles Match */
 function checkForMatch(){
     if(firstTile.dataset.type === secondTile.dataset.type) {
-    matchCounter++;
-    matchCount.innerHTML = `Total Matches: ${matchCounter}`;
-    disableTiles();
-    return;
+        matchCounter++;
+        matchCount.innerHTML = `Total Matches: ${matchCounter}`;
+        disableTiles();
+        return;
     }
     unflipTiles();
 }
@@ -69,25 +88,33 @@ function unflipTiles() {
 function resetTiles() {
    [flippedTile, pauseFlips] = [false, false];
    [firstTile, secondTile] = [null, null];
- }
+}
 
 (function shuffle() {
    tiles.forEach(tile => {
         let ramdomPos = Math.floor(Math.random() * 12);
         tile.style.order = ramdomPos;
    });
- })();
+})();
 
- function resetGame(){
+function resetGame(){    
+    /* shuffle tiles */
     tiles.forEach(tile => {
-    let ramdomPos = Math.floor(Math.random() * 12);
-    tile.style.order = ramdomPos;
+        let ramdomPos = Math.floor(Math.random() * 12);
+        tile.style.order = ramdomPos;
     });
+
+    /* reset pair counter to 0 */
     pairCounter = 0;
     pairCount.innerHTML = `Total Pairs Flipped: ${pairCounter}`;
+
+    /* reset match counter to 0 */
     matchCounter = 0;
     matchCount.innerHTML = `Total Matches: ${matchCounter}`;
- }
+
+    /* stop timer */
+    clearInterval(timer);
+}
      
 tiles.forEach(tile => tile.addEventListener("click", flipTile));
 

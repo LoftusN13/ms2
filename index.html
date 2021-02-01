@@ -38,38 +38,35 @@
             <button type="button" class="btn" data-toggle="modal" data-target="#instructionModal">
                 <i class="far fa-question-circle" aria-hidden="true"></i>
             </button>
+        </h1>
 
-            <!-- MODAL CONTENT-->
-            <div id="instructionModal" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header justify-content-center">
-                            <h4 class="modal-title">Welcome!</h4>
-                        </div>
+        <!-- MODAL CONTENT-->
+        <div id="instructionModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center">
+                        <h4 class="modal-title">Welcome!</h4>
+                    </div>
 
-                        <div class="modal-body">
-                            <p>
-                                In order to play the game, just follow these instructions;
-                                <ol>
-                                    <li>Click or tap a tile to turn it over to reveal an image.</li>
-                                    <li>You now need to find this image's pair.</li>
-                                    <li>Select another tile. If it matches the first one; well done! You have found a match. If not; both tiles will flip back.</li>
-                                    <li>Continue flipping tiles until you have found all the pairs.</li>
-                                    <li>Click on the <em>Reset Game</em> button if you'd like to start over.</li>
-                                    <li>If you have any difficulty understanding or playing this game, please <a href="contact.html"><strong>contact us</strong></a> and we will do our best to help.</li>
-                                    <li>Enjoy playing the game!</li>
-                                </ol>
-                            </p>
-
-                        </div>
-                        <!-- MODAL CLOSE BUTTON--> 
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Okay!</button>
-                        </div>
+                    <div class="modal-body">
+                        In order to play the game, just follow these instructions;<br>
+                        <ol>
+                            <li>Click or tap a tile to turn it over to reveal an image.</li>
+                            <li>You now need to find this image's pair.</li>
+                            <li>Select another tile. If it matches the first one; well done! You have found a match. If not; both tiles will flip back.</li>
+                            <li>Continue flipping tiles until you have found all the pairs.</li>
+                            <li>Click on the <em>Reset Game</em> button if you'd like to start over.</li>
+                            <li>If you have any difficulty understanding or playing this game, please <a href="contact.html"><strong>contact us</strong></a> and we will do our best to help.</li>
+                            <li>Enjoy playing the game!</li>
+                        </ol>
+                    </div>
+                    <!-- MODAL CLOSE BUTTON--> 
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Okay!</button>
                     </div>
                 </div>
             </div>
-        </h1>
+        </div>
         <!-- End of MODAL -->
     </div>
 
@@ -83,8 +80,8 @@
     <div class="container-fluid">
         <!-- TIMER AND SCORE PANEL -->
         <div class="panel">
-            <span class="timer">
-
+            <span id="timer">
+                Timer: 00:00
             </span>
 
             <span id="pair-count">
@@ -100,18 +97,16 @@
             <!-- INSTRUCTION FOR LARGER SCREENS -->
             <div class="col-lg-4 instruction-section">
                 <h2>Welcome!</h2>
-                <p>
-                    In order to play the game, just follow these instructions;
-                    <ol>
-                        <li>Click or tap a tile to turn it over to reveal an image.</li>
-                        <li>You now need to find this image's pair.</li>
-                        <li>Select another tile. If it matches the first one; well done! You have found a match. If not; both tiles will flip back.</li>
-                        <li>Continue flipping tiles until you have found all the pairs.</li>
-                        <li>Click on the <em>Reset Game</em> button if you'd like to start over.</li>
-                        <li>If you have any difficulty understanding or playing this game, please <a href="contact.html"><strong>contact us</strong></a> and we will do our best to help.</li>
-                        <li>Enjoy playing the game!</li>
-                    </ol>
-                </p>
+                In order to play the game, just follow these instructions;<br>
+                <ol>
+                    <li>Click or tap a tile to turn it over to reveal an image.</li>
+                    <li>You now need to find this image's pair.</li>
+                    <li>Select another tile. If it matches the first one; well done! You have found a match. If not; both tiles will flip back.</li>
+                    <li>Continue flipping tiles until you have found all the pairs.</li>
+                    <li>Click on the <em>Reset Game</em> button if you'd like to start over.</li>
+                    <li>If you have any difficulty understanding or playing this game, please <a href="contact.html"><strong>contact us</strong></a> and we will do our best to help.</li>
+                    <li>Enjoy playing the game!</li>
+                </ol>
             </div>
             
             <!-- GAME SECTION -->
