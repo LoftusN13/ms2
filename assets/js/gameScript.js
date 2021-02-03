@@ -20,6 +20,8 @@ let timer;
 let mins;
 let secs;
 
+let modal = document.getElementById("congratsModal");
+
 function startTimer() {
     timer = setInterval(function () {
         time++;
@@ -122,10 +124,18 @@ function resetTiles() {
      
 } */
 
+function congratsModal(){
+    if (matchCount == 6) {
+        console.log("hey");
+    }
+}
+
 function resetGame() {
     location.reload();
     return false;
 }
+
+
      
 tiles.forEach(tile => tile.addEventListener("click", flipTile));
 
