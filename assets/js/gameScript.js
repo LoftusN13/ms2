@@ -31,7 +31,7 @@ function startTimer() {
 
 /* Flip Game Tile When Clicked */
 function flipTile() {
-    if (timerOn === true) {
+     if (timerOn === true) {
         startTimer();
         timerOn = false;
     }
@@ -44,8 +44,9 @@ function flipTile() {
     if(!flippedTile) {
         flippedTile = true;
         firstTile = this;
-        return;    
-    }
+        return;  
+    }  
+    
 
     secondTile = this;
     hasFlippedCard = false;
@@ -97,25 +98,35 @@ function resetTiles() {
    });
 })();
 
-function resetGame(){    
-    /* shuffle tiles */
+/*function resetGame(){ 
     tiles.forEach(tile => {
+        tile.classList.remove("flip");
         let ramdomPos = Math.floor(Math.random() * 12);
         tile.style.order = ramdomPos;
-    });
+    })
+ 
+    /* shuffle tiles */
 
     /* reset pair counter to 0 */
-    pairCounter = 0;
+    /*pairCounter = 0;
     pairCount.innerHTML = `Total Pairs Flipped: ${pairCounter}`;
 
     /* reset match counter to 0 */
-    matchCounter = 0;
+    /*matchCounter = 0;
     matchCount.innerHTML = `Total Matches: ${matchCounter}`;
 
-    /* stop timer */
+    mins = ("0" + 0);
+    secs = ("0" + 0);
+    document.getElementById("timer").innerHTML = `Timer: ${mins}:${secs}`;
     clearInterval(timer);
+     
+} */
+
+function resetGame() {
+    location.reload();
+    return false;
 }
      
 tiles.forEach(tile => tile.addEventListener("click", flipTile));
 
-reset.addEventListener("click", resetGame());
+reset.addEventListener("click", resetGame);
