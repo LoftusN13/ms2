@@ -21,7 +21,7 @@
             <div class="justify-content-end collapse navbar-collapse" id="navigation-menu">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Play</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact Us</a>
@@ -39,7 +39,6 @@
                 <i class="far fa-question-circle" aria-hidden="true"></i>
             </button>
         </h1>
-
         <!-- MODAL CONTENT-->
         <div id="instructionModal" class="modal fade" role="dialog">
             <div class="modal-dialog">
@@ -80,101 +79,97 @@
     <div class="container-fluid">
         <!-- TIMER AND SCORE PANEL -->
         <div class="panel">
-            <span id="timer">
-                Timer: 00:00
-            </span>
-
             <span id="pair-count">
-                
+                Total Pairs Flipped: 0
             </span>
 
             <span id="match-count">
-                
+                Total Matches: 0
             </span>
         </div>
-    
+
         <div class="row">
             <!-- INSTRUCTION FOR LARGER SCREENS -->
             <div class="col-lg-4 instruction-section">
                 <h2>Welcome!</h2>
-                In order to play the game, just follow these instructions;<br>
-                <ol>
-                    <li>Click or tap a tile to turn it over to reveal an image.</li>
-                    <li>You now need to find this image's pair.</li>
-                    <li>Select another tile. If it matches the first one; well done! You have found a match. If not; both tiles will flip back.</li>
-                    <li>Continue flipping tiles until you have found all the pairs.</li>
-                    <li>Click on the <em>Reset Game</em> button if you'd like to start over.</li>
-                    <li>If you have any difficulty understanding or playing this game, please <a href="contact.html"><strong>contact us</strong></a> and we will do our best to help.</li>
-                    <li>Enjoy playing the game!</li>
-                </ol>
+                    In order to play the game, just follow these instructions;<br>
+                    <ol>
+                        <li>Click or tap a tile to turn it over to reveal an image.</li>
+                        <li>You now need to find this image's pair.</li>
+                        <li>Select another tile. If it matches the first one; well done! You have found a match. If not; both tiles will flip back.</li>
+                        <li>Continue flipping tiles until you have found all the pairs.</li>
+                        <li>Click on the <em>Reset Game</em> button if you'd like to start over.</li>
+                        <li>If you have any difficulty understanding or playing this game, please <a href="contact.html"><strong>contact us</strong></a> and we will do our best to help.</li>
+                        <li>Enjoy playing the game!</li>
+                    </ol>    
             </div>
-            
-            <!-- GAME SECTION -->
-            <div class="col-lg-8 tile-game">
+
+            <!-- MATCH THE PAIRS GAME TILES -->
+            <div class="col-lg-8 game-section">
                 <div class="game-tile" data-type="pic-1">
-                    <img class="front-tile" src="assets/images/pic-1.jpg" alt="">
-                    <img class="back-tile" src="assets/images/back-tile.jpg" alt="">
+                    <img class="front-tile" src="assets/images/pic-1.jpg" alt="Game Tile Ice">
+                    <img class= "back-tile" src="assets/images/back-tile.jpg" alt="Unflipped Game Tile with Question Mark">
                 </div>
 
                 <div class="game-tile" data-type="pic-1">
-                    <img class="front-tile" src="assets/images/pic-1.jpg" alt="">
-                    <img class="back-tile" src="assets/images/back-tile.jpg" alt="">
+                    <img class="front-tile" src="assets/images/pic-1.jpg" alt="Game Tile Ice">
+                    <img class= "back-tile" src="assets/images/back-tile.jpg" alt="Unflipped Game Tile with Question Mark">
                 </div>
 
                 <div class="game-tile" data-type="pic-2">
-                    <img class="front-tile" src="assets/images/pic-2.jpg" alt="">
-                    <img class="back-tile" src="assets/images/back-tile.jpg" alt="">
+                    <img class="front-tile" src="assets/images/pic-2.jpg" alt="Game Tile Cliff">
+                    <img class= "back-tile" src="assets/images/back-tile.jpg" alt="Unflipped Game Tile with Question Mark">
                 </div>
 
                 <div class="game-tile" data-type="pic-2">
-                    <img class="front-tile" src="assets/images/pic-2.jpg" alt="">
-                    <img class="back-tile" src="assets/images/back-tile.jpg" alt="">
+                    <img class="front-tile" src="assets/images/pic-2.jpg" alt="Game Tile Cliff">
+                    <img class= "back-tile" src="assets/images/back-tile.jpg" alt="Unflipped Game Tile with Question Mark">
                 </div>
 
                 <div class="game-tile" data-type="pic-3">
-                    <img class="front-tile" src="assets/images/pic-3.jpg" alt="">
-                    <img class="back-tile" src="assets/images/back-tile.jpg" alt="">
+                    <img class="front-tile" src="assets/images/pic-3.jpg" alt="Game Tile Tree">
+                    <img class= "back-tile" src="assets/images/back-tile.jpg" alt="Unflipped Game Tile with Question Mark">
                 </div>
 
                 <div class="game-tile" data-type="pic-3">
-                    <img class="front-tile" src="assets/images/pic-3.jpg" alt="">
-                    <img class="back-tile" src="assets/images/back-tile.jpg" alt="">
+                    <img class="front-tile" src="assets/images/pic-3.jpg" alt="Game Tile Tree">
+                    <img class= "back-tile" src="assets/images/back-tile.jpg" alt="Unflipped Game Tile with Question Mark">
                 </div>
 
                 <div class="game-tile" data-type="pic-4">
-                    <img class="front-tile" src="assets/images/pic-4.jpg" alt="">
-                    <img class="back-tile" src="assets/images/back-tile.jpg" alt="">
+                    <img class="front-tile" src="assets/images/pic-4.jpg" alt="Game Tile Sunset">
+                    <img class= "back-tile" src="assets/images/back-tile.jpg" alt="Unflipped Game Tile with Question Mark">
                 </div>
 
                 <div class="game-tile" data-type="pic-4">
-                    <img class="front-tile" src="assets/images/pic-4.jpg" alt="">
-                    <img class="back-tile" src="assets/images/back-tile.jpg" alt="">
+                    <img class="front-tile" src="assets/images/pic-4.jpg" alt="Game Tile Sunset">
+                    <img class= "back-tile" src="assets/images/back-tile.jpg" alt="Unflipped Game Tile with Question Mark">
                 </div>
 
                 <div class="game-tile" data-type="pic-5">
-                    <img class="front-tile" src="assets/images/pic-5.jpg" alt="">
-                    <img class="back-tile" src="assets/images/back-tile.jpg" alt="">
+                    <img class="front-tile" src="assets/images/pic-5.jpg" alt="Game Tile Lake">
+                    <img class= "back-tile" src="assets/images/back-tile.jpg" alt="Unflipped Game Tile with Question Mark">
                 </div>
 
                 <div class="game-tile" data-type="pic-5">
-                    <img class="front-tile" src="assets/images/pic-5.jpg" alt="">
-                    <img class="back-tile" src="assets/images/back-tile.jpg" alt="">
+                    <img class="front-tile" src="assets/images/pic-5.jpg" alt="Game Tile Lake">
+                    <img class= "back-tile" src="assets/images/back-tile.jpg" alt="Unflipped Game Tile with Question Mark">
                 </div>
 
                 <div class="game-tile" data-type="pic-6">
-                    <img class="front-tile" src="assets/images/pic-6.jpg" alt="">
-                    <img class="back-tile" src="assets/images/back-tile.jpg" alt="">
+                    <img class="front-tile" src="assets/images/pic-6.jpg" alt="Game Tile Beach">
+                    <img class= "back-tile" src="assets/images/back-tile.jpg" alt="Unflipped Game Tile with Question Mark">
                 </div>
 
                 <div class="game-tile" data-type="pic-6">
-                    <img class="front-tile" src="assets/images/pic-6.jpg" alt="">
-                    <img class="back-tile" src="assets/images/back-tile.jpg" alt="">
+                    <img class="front-tile" src="assets/images/pic-6.jpg" alt="Game Tile Beach">
+                    <img class= "back-tile" src="assets/images/back-tile.jpg" alt="Unflipped Game Tile with Question Mark">
                 </div>
             </div>
 
             <div class="reset">
-                <button class="reset-btn" onclick="resetGame();">Reset Game!</button>
-            </div>   
+                <button class="reset-btn" onclick="resetGame()">Reset Game!</button>
+            </div>
         </div>
     </div>
 
@@ -213,6 +208,7 @@
         </div>
     </footer>
     <!-- End of FOOTER -->
+
 <script src="assets/js/gameScript.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous" defer></script>
